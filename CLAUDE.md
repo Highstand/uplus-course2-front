@@ -70,7 +70,7 @@ G1 화면 수 · G2 토큰 동기화 · G3 토큰 밖 값 · G4★ 가격(규칙
 
 ## 6. 커밋과 이어 하기
 - 브랜치는 main 하나. 새 브랜치·worktree 금지.
-- push는 원격 저장소 github.com/Highstand/uplus-plan-claude(origin)의 main으로만, `git push origin main`만 허용한다 (사용자 결정). 강제 push 금지. 에이전트는 push하지 않고, 메인 대화가 사용자가 요청할 때만 한다.
+- push는 원격 저장소 origin(각자 연결한 내 GitHub 저장소)의 main으로만, `git push origin main`만 허용한다. 강제 push 금지. 에이전트는 push하지 않고, 메인 대화가 사용자가 요청할 때만 한다.
 - 단계 게이트가 통과할 때마다 메인 대화가 커밋 1개: `harness: <단계> <이름> 통과`
 - "이어서 해줘": harness/state.json과 마지막 커밋을 읽고(`node harness/scripts/stage.mjs status`), 통과하지 못한 첫 단계부터 시작한다.
 
